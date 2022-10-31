@@ -12,6 +12,10 @@ function App() {
     setTasks(data)
   }, [])
 
+  function createTask(task) {
+    setTasks([...tasks, task])
+  }
+
   return (
     <>
       <TaskForm />
