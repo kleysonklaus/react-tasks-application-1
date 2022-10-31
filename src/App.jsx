@@ -16,10 +16,10 @@ function App() {
     const _newData = {
       id: tasks.length,
       title: taskTitle,
-      description: "asd"
+      description: "description del nuevo dato insetado"
     }
     setTasks([...tasks, _newData])
-    console.log(tasks)
+    // console.log(tasks)
   }
 
   return (
