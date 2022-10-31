@@ -12,13 +12,19 @@ function App() {
     setTasks(data)
   }, [])
 
-  function createTask(task) {
-    setTasks([...tasks, task])
+  function createTask(taskTitle) {
+    const _newData = {
+      id: tasks.length,
+      title: taskTitle,
+      description: "asd"
+    }
+    setTasks([...tasks, _newData])
+    console.log(tasks)
   }
 
   return (
     <>
-      <TaskForm />
+      <TaskForm createTask={createTask} />
       <TaskList tasks={tasks} />
     </>
   )
