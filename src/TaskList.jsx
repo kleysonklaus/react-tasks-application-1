@@ -11,10 +11,6 @@ function TaskList({ tasks }) {
             {
                 tasks.map((task, index) => (
                     <TaskCard key={task.id} task={task} />
-                    // <div key={element.id}>
-                    //     <h1>{element.title}</h1>
-                    //     <p>{element.description}</p>
-                    // </div>
                 )
                 )
             }
