@@ -12,11 +12,11 @@ function App() {
     setTasks(data)
   }, [])
 
-  function createTask(taskTitle) {
+  function createTask(taskTitle, taskDescription) {
     const _newData = {
       id: tasks.length,
       title: taskTitle,
-      description: "description del nuevo dato insetado"
+      description: taskDescription
     }
     setTasks([...tasks, _newData])
     // console.log(tasks)
