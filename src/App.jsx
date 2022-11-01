@@ -1,6 +1,6 @@
 import TaskForm from './components/TaskForm'
 import TaskList from './components/TaskList'
-import { tasks as data } from "./task";
+import { tasks as data } from "./data/task";
 
 import { useState, useEffect } from 'react';
 
