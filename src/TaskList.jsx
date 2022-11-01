@@ -1,4 +1,4 @@
-import TaskCard from "./TaskCard"
+import TaskCard from "./components/TaskCard"
 
 function TaskList({ tasks }) {
 
