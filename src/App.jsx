@@ -19,13 +19,17 @@ function App() {
       description: taskDescription
     }
     setTasks([...tasks, _newData])
-    // console.log(tasks)
+  }
+
+  function deleteTask(taskId) {
+    console.log(tasks)
+    console.log(taskId)
   }
 
   return (
     <>
       <TaskForm createTask={createTask} />
-      <TaskList tasks={tasks} />
+      <TaskList tasks={tasks} deleteTask={deleteTask} />
     </>
   )
 }
