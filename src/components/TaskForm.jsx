@@ -1,13 +1,11 @@
-import { useState, useContext } from 'react'
-import { TaskContext } from "../context/TaskContext";
+import { useState } from 'react'
 
 
 function TaskForm({ createTask }) {
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
 
-    const valor = useContext(TaskContext)
-    console.log(valor)
+
     const handleSubmit = (e) => {
         e.preventDefault()
         createTask(title, description)
