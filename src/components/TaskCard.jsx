@@ -1,4 +1,3 @@
-
 function TaskCard({ task, deleteTask }) {
 
     return (
