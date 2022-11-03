@@ -1,10 +1,14 @@
-function Taskcontext(props) {
+import { createContext } from "react";
+
+export const TaskContext = createContext()
+
+export function TaskcontextProvider(props) {
     return (
-        <>
-            <h1>Componente context</h1>
+        <TaskContext.Provider>
             {props.children}
-        </>
+        </TaskContext.Provider>
     )
 }
 
-export default Taskcontext
+// no se usara el export global para usar contexto
+// export default TaskcontextProvider
