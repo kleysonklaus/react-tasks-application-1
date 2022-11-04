@@ -1,6 +1,6 @@
 # react-tasks-application-1
 
-# see the example
+# see the example (release)
 
 # link
 
